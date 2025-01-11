@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4e73df, #1c3d7d); /* Blue tones for a professional feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Login Page Layout */
+.login-page {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 0px 12px 12px 0px; /* Top-left and bottom-right corners are sharp, top-right and bottom-left are smooth */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  background: linear-gradient(135deg, #1c3d7d, #4e73df); /* Deeper blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0px 12px 12px 0px; /* Smooth corners on the right side */
+}
+
+.app-name {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #4e73df; /* Matching blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(78, 115, 223, 0.5); /* Subtle blue glow */
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4e73df, #1c3d7d); /* Matching gradient for button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #375a8c, #1c3d7d); /* Slightly darker gradient on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(78, 115, 223, 0.4);
+}
+
+/* Register Link */
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #4e73df; /* Blue tone */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #375a8c; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .app-name {
+    font-size: 2rem;
+  }
+}
